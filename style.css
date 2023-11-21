@@ -1,0 +1,23 @@
+.styling {
+    display: flex;
+    align-items:center;
+    flex-direction:row;
+    margin: 15px;
+    border-style: solid;
+    border-radius: 3%;
+    margin-left: 50px;
+    height: 300px;
+}
+
+h2 {
+    font-size: 80px;
+    margin-left: 50px;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+    border-right-style: solid;
+    border-radius: 10%;
+    margin-right: 10px;
+}
