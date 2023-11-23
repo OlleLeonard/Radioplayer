@@ -1,27 +1,48 @@
 1. Explain the importance of semantic elements in web development according to accessibility guidelines.
 Provide examples of at least two semantic HTML elements and clarify how they enhance accessibility for users with disabilities.
 
-Svar: När man skriver HTML är det bra att namnge saker på ett korrekt och enkelt vis så att du själv lätt kan hitta i din kod och att andra kan läsa 
-koden enkelt.
-
-
-
+Svar: Användarvänlighet är viktigt när man skriver sin kod så att alla kan ta del av den. Det kan vara att gör stora knappar som är lätta att trycka på eller 
+färganpassa sidan så att den är enklare att se och tyda. När man skriver HTML är det bra att namnge saker på ett korrekt och enkelt vis så att du själv lätt kan hitta i din kod och att andra kan läsa 
+koden enklare. Tillexempel kan man i stället för <div> taggar använda <header>, <section> och <footer> för att mer definiera vad koden är till för att göra. 
+På detta sätt blir koden mer läsbar och enlare att navigera. När man skriver sin kod ska man ta hänsyn till männsikors olikheter och göra den så 
+användarvänlig som möjligt. Detta kan man göra genom att tillexempel se till så att texter och bilder går att förstora så att människor med synproblematik
+enkelt kan se vad som står och visas exempelvis med en <button> knapp som gör bilden större eller att göra sidan responsive så att den visas i bra format På
+olika enheter. Även att göra koden mer uppstyrd och namnge saker med förklarliga namn är sätt att anpassa användarvänligheten för
+människor med tillexempel koncentrationssvårigheter. 
 
 2. Describe the significance of color contrast in web design concerning accessibility.
  How does adhering to color contrast guidelines benefit users with visual impairments, and what are the recommended contrast ratios as per WCAG standards?
 
-Svar:
+Svar: Att ha bra kontrast mellan tillexempel backgrund och text gör att man mycket enklare kan läsa vad som står. Är text och bakgrund för lika kan det nästan
+vara omöjligt att läsa. Speciellt svårt blir det för de med synfel och färgblindhet då text och bakgrund smälter samman i deras ögon. Man kan mäta
+hur bra kontrasten är mellan två färger. Svart text på vit bakgrund har tillexempel en färgkontrast på 21. Enligt WCAG så är en rekommenderad färgkontrast 
+på allt högre än 4.5:1.
 
 3. Discuss the role of alternative text (alt text) for images in accordance with accessibility guidelines.
  Why is it crucial to include descriptive alt text, and how does this contribute to making web content more accessible?
  Provide examples to illustrate your explanation.
 
- Svar:
+ Svar: När man ska koda in en bild på sin sida så är det bra att använda en alt="" i bildens kod då detta gör att man kan läsa sig till vad som visas i bilden 
+ utan att behöva se den. Mellan "kaninöronen" skriver man vad bilden föreställer. Bilder har ofta en lång kod av siffror och bokstäver som namn så på detta sättet kan
+ man få en förklaring på bildens innehåll. Detta är inte bara bra för den som läser koden utan också om det skulle vara
+ något fel med bilden för så kan sidan endå rendera texten i alt="" och göra den förstålig. Det gör även att tex de med synsvårigheter kan få texten uppläst och förstå att
+ det finns en bild där och vad den visar.
+ Exempel: <img src="TB1hVGkvVP7gK0jSZFjXXc5aXXa36549.jpg" alt="Picture of a cute dog">
+
 
 4. Explain the purpose of landmarks in creating accessible web content.
 How do landmarks aid in navigation for users of assistive technologies, and can you provide examples of commonly used landmark elements in HTML?
 
-Svar:
+Svar: Som jag skrev ovan så är det bra att dela in sin kod i mer lättläsliga stycken och inte bara använda <div> för att dela av koden. Detta kallas för landmarks
+och är till för att skapa en bättre struktur. Med detta kan man enklare se om man tillexempel skriver i textens övre, mittersta eller undre del. Genom att göra
+landmarks blir det enklare att söka upp fel i koden och för andra att tyda den. Exempel på landmarks kan vara <header>, <nav>, <main>, <aside>, <section> och <footer>
+Med landmarks kan även blinda navigera sig bättre på en hemsida genom att använda "screen readers" och då säga namnet på den sectionen de vill hamna på och få uppläst.
 
 5. Describe the significance of proper form labeling. 
 Why is it important to label form elements, and what strategies can developers implement to ensure effective labeling for improved accessibility?
+
+Svar: Labels i en forums kod är väldigt bra för att ge information om vad forumet handlar om och vad man ska fylla i. De står oftast över en ifyllnings ruta och
+bör vara kort men tydlig för användaren att tolka så att personen som svarar på formuläret inte ska svara fel. För människor med synsvårigheter är tydliga Labels
+extra viktiga då felmarginalen kan bli större och detta kan göra formuläret helt meningslöst. Om man använder en "screen-reader" så kan texten i label läsas ut vilket
+medför att även synskadade kan svara. Man kan även göra så att bara man klickar på label texten kommer man till svarsrutan vilket är bra för de med motoriksvårigheter
+eller dålig fingertoppskänsla. 
